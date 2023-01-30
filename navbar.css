@@ -25,6 +25,9 @@ navbar{
     color: #fff;
 }
 .navbarLogo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     width: 40%;
 }
 
@@ -65,9 +68,90 @@ navbar{
     padding-right: 40px;
 }
 
-
+/* CONTENT DIV */
 .content{
+    
     width: 100%;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;    
     background: linear-gradient(180deg, rgba(136, 209, 255, 0.45) 0%, rgba(136, 209, 255, 0.45) 0.01%, rgba(177, 243, 255, 0) 123.55%);
+    
 }
+
+.contentOverlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url('assets/below_navbar_right_design.png') ;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.contentDiv{
+     width: 1120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1{    
+    color: #fff;
+    font-size: 42px;
+}
+
+.content p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.earlyAccess{
+    width: 55%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 0;
+}
+
+.earlyAccess input{
+    border-radius: 30px;
+    border: none;
+    padding: 20px 0;
+    width: 100%;
+    padding-left:40px;
+    
+}
+
+.earlyAccess::placeholder{
+    color: #98AEB2;
+}
+
+.earlyAccess input:focus{
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 20px 50%;
+
+}
+
+.earlyAccess button{
+    box-shadow: #0683dc89 0px 0px 15px;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    border: none;
+    background-color: #0683DC;
+    color: #fff;
+    box-shadow: #98AEB2;
+    border-radius: 30px;
+}
+
